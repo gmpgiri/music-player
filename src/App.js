@@ -28,14 +28,25 @@ function App() {
           user: user,
         });
       });
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlists,
+        });
+      });
+
+      spotify.getPlaylist("37i9dQZEVXbMDoHDwVN2tF").then((response) => {
+        dispatch({
+          type: "SET_global_top_50",
+          global_top_50: response,
+        });
+      });
     }
   }, []);
-  console.log("Hi", user);
-  console.log("Hi t", token);
 
   return (
     <div className='app'>
-      {token ? <Player /> : <Login />}
+      {token ? <Player spotify={spotify} /> : <Login />}
       {/* Spotify Logo */}
     </div>
   );
