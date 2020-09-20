@@ -1,8 +1,8 @@
 export const initialState = {
   user: null,
   //remove before deploying
-  token:
-    "BQD7igWGLBG2rIY9rU5K4LZdJ7we0Au5IzHA_tdwtFkK_F1p-ATJKO0jd-BkwE68ApxEmjTP900wTLVsvikwJM5Xj6KFMGtT8peuGmPSWZx1oyMPJf3rJLBpbSdMfyVzpxiI7dQJmv-8wf_4zsXYCz5fZ6b_QgQlYR0PsPDHq_9LUySPSAgE",
+  // token:
+  //   "BQD7igWGLBG2rIY9rU5K4LZdJ7we0Au5IzHA_tdwtFkK_F1p-ATJKO0jd-BkwE68ApxEmjTP900wTLVsvikwJM5Xj6KFMGtT8peuGmPSWZx1oyMPJf3rJLBpbSdMfyVzpxiI7dQJmv-8wf_4zsXYCz5fZ6b_QgQlYR0PsPDHq_9LUySPSAgE",
   playlists: [],
   playing: false,
   item: null,
